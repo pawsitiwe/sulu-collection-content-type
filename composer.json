@@ -6,8 +6,14 @@
     "license": "MIT",
     "authors": [
         {
-            "name": "Your Name",
-            "email": "your@email.com"
+            "name": "Timo Weigel",
+            "email": "tiwe@pawsitiwe.de",
+            "role": "Developer"
+        },
+        {
+            "name": "Patrick Wollner",
+            "email": "paw@pawsitiwe.de",
+            "role": "Developer"
         }
     ],
     "require": {
