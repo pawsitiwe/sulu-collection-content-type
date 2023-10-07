@@ -1,0 +1,16 @@
+sulu_admin:
+  field_type_options:
+    single_selection:
+      single_collection_selection:
+        default_type: 'list_overlay'
+        resource_key: 'collections'
+        view:
+          name: 'collection_field.edit'
+          result_to_view:
+            id: 'id'
+        types:
+          single_select:
+            display_property: 'name'
+            id_property: 'id'
+            overlay_title: 'collection_field.overview'
+

@@ -1,0 +1,21 @@
+services:
+  _defaults:
+    autowire: true
+    autoconfigure: true
+
+  Pawsitiwe\SuluCollectionContentType\Content\Type\:
+    resource: '../src/Content/Type/*'
+    tags: ['controller.service_arguments']
+
+  Pawsitiwe\SuluCollectionContentType\Twig\:
+    tags:
+      - { name: 'twig.extension' }
+
+  pawsitiwe.sulu_collection_content_type.translation.loader:
+    class: Symfony\Component\Translation\Loader\YamlFileLoader
+    arguments: ['%kernel.project_dir%/vendor/pawsitiwe/sulu-collection-content-type/src/Resources/translations']
+    tags:
+      - { name: 'translation.loader', alias: 'pawsitiwe.sulu_collection_content_type_translation' }
+
+imports:
+  - { resource: '@PawsitiweSuluCollectionContentTypeBundle/Resources/config/sulu_collection_field.yaml' }

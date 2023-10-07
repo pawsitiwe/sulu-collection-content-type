@@ -1,0 +1,27 @@
+{
+    "name": "pawsitiwe/sulu-collection-content-type",
+    "description": "Adds a content type for collections to Sulu CMS",
+    "type": "sulu-bundle",
+    "keywords": ["sulu", "cms", "bundle", "collection-content-type"],
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "Your Name",
+            "email": "your@email.com"
+        }
+    ],
+    "require": {
+        "php": "^8.2",
+        "sulu/sulu": "^2.5"
+    },
+    "autoload": {
+        "psr-4": {
+            "Pawsitiwe\\SuluCollectionContentType\\": "src/"
+        }
+    },
+    "extra": {
+        "sulu": {
+            "target": "public"
+        }
+    }
+}
